@@ -19,9 +19,23 @@ import re
 # resposta = re.search(padrao, texto)
 # print(resposta.group())
 
-padrao = r"\w{5,50}@\w{3,10}.\w{2,3}.\w{2,3}"
+# EMAIL
+# padrao = r"\w{5,50}@\w{3,10}.\w{2,3}.\w{2,3}"
 # padrao = r"\w{5,50}@\w{3,10}.com.br" #padrão br
-texto = "jfurtepovk5jfy val_nicolini13@hotmail.com.br   porjvfsrw"
-resposta = re.search(padrao, texto)
+# texto = "jfurtepovk5jfy val_nicolini13@hotmail.com.br   porjvfsrw"
+# resposta = re.search(padrao, texto)
+# print(resposta.group())
 
+# TELEFONE
+
+# padrao = '[0-9]{2}[0-9]{4,5}[0-9]{4}'
+# texto = '374959 39573 ert 14998879246 87495 hj347564353 14996503905 7839fjd64758'
+# resposta = re.findall(padrao, texto)
+# print(resposta)
+
+from TelefonesBr import TelefonesBr
+
+telefone = '14998879246'
+padrao = '([0-9]{2,3})?([0-9]{2})([0-9]{4,5})([0-9]{4})'
+resposta = re.search(padrao, telefone)
 print(resposta.group())
