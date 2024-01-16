@@ -35,7 +35,8 @@ import re
 
 from TelefonesBr import TelefonesBr
 
-telefone = '14998879246'
-padrao = '([0-9]{2,3})?([0-9]{2})([0-9]{4,5})([0-9]{4})'
-resposta = re.search(padrao, telefone)
-print(resposta.group())
+telefone = '22214998879246'
+# padrao = '([0-9]{2,3})?([0-9]{2})([0-9]{4,5})([0-9]{4})'
+# resposta = re.search(padrao, telefone)
+resposta = TelefonesBr(telefone)
+print(resposta)
