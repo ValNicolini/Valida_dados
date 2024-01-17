@@ -35,8 +35,19 @@ import re
 
 from TelefonesBr import TelefonesBr
 
-telefone = '22214998879246'
+# telefone = '22214998879246'
 # padrao = '([0-9]{2,3})?([0-9]{2})([0-9]{4,5})([0-9]{4})'
 # resposta = re.search(padrao, telefone)
-resposta = TelefonesBr(telefone)
-print(resposta)
+# resposta = TelefonesBr(telefone)
+# print(resposta)
+
+from datas_br import DatasBr
+from datetime import datetime, timedelta
+
+cadastro = DatasBr()
+print(cadastro.tempo_cadastro())
+
+# hoje = datetime.today()
+
+# amanha = datetime.today() + timedelta(days=1, hours=20)
+
