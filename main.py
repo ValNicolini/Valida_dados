@@ -44,10 +44,20 @@ from TelefonesBr import TelefonesBr
 from datas_br import DatasBr
 from datetime import datetime, timedelta
 
-cadastro = DatasBr()
-print(cadastro.tempo_cadastro())
+# cadastro = DatasBr()
+# print(cadastro.tempo_cadastro())
 
 # hoje = datetime.today()
 
 # amanha = datetime.today() + timedelta(days=1, hours=20)
 
+from acesso_cep import BuscaEndereco
+import requests
+
+
+cep = '17055210'
+cep = BuscaEndereco(cep)
+cidade, bairro, uf = cep.acessa_via_cep()
+# print(cep.acessa_via_cep())
+
+print(cidade)
