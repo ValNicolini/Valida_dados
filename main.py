@@ -12,7 +12,7 @@
 #
 # print(documento)
 
-import re;
+import re
 
 padrao = '[0-9][a-z]{2}[0-9]'
 texto = '123 1uy4e 1cc 7bg3 aal'
