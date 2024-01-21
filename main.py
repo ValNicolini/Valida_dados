@@ -1,5 +1,5 @@
-from cpf_cnpj import Documento
-from validate_docbr import CNPJ
+# from cpf_cnpj import Documento
+# from validate_docbr import CNPJ
 
 # cpf_um = Cpf("15403791833")
 # print(cpf_um)
@@ -12,12 +12,12 @@ from validate_docbr import CNPJ
 #
 # print(documento)
 
-import re
+import re;
 
-# padrao = '[0-9][a-z]{2}[0-9]'
-# texto = '123 1al2 1cc aal'
-# resposta = re.search(padrao, texto)
-# print(resposta.group())
+padrao = '[0-9][a-z]{2}[0-9]'
+texto = '123 1uy4e 1cc 7bg3 aal'
+resposta = re.search(padrao, texto)
+print(resposta.group())
 
 # EMAIL
 # padrao = r"\w{5,50}@\w{3,10}.\w{2,3}.\w{2,3}"
@@ -28,18 +28,14 @@ import re
 
 # TELEFONE
 
-# padrao = '[0-9]{2}[0-9]{4,5}[0-9]{4}'
-# texto = '374959 39573 ert 14998879246 87495 hj347564353 14996503905 7839fjd64758'
-# resposta = re.findall(padrao, texto)
-# print(resposta)
+#int(resposta)
 
 from TelefonesBr import TelefonesBr
 
-# telefone = '22214998879246'
+#telefone = '22214998879246'
 # padrao = '([0-9]{2,3})?([0-9]{2})([0-9]{4,5})([0-9]{4})'
 # resposta = re.search(padrao, telefone)
-# resposta = TelefonesBr(telefone)
-# print(resposta)
+#print(resposta)
 
 from datas_br import DatasBr
 from datetime import datetime, timedelta
@@ -51,6 +47,7 @@ from datetime import datetime, timedelta
 
 # amanha = datetime.today() + timedelta(days=1, hours=20)
 
+
 from acesso_cep import BuscaEndereco
 import requests
 
@@ -58,6 +55,9 @@ import requests
 cep = '17055210'
 cep = BuscaEndereco(cep)
 cidade, bairro, uf = cep.acessa_via_cep()
+
+# cidade, bairro, uf = cep.acessa_via_cep()
+
 # print(cep.acessa_via_cep())
 
-print(cidade)
+# print(cidade)
