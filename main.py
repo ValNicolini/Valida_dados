@@ -55,7 +55,7 @@ from acesso_cep import BuscaEndereco
 import requests
 
 
-cep = ''
+cep = '17055210'
 cep = BuscaEndereco(cep)
 cidade, bairro, uf = cep.acessa_via_cep()
 # print(cep.acessa_via_cep())
